@@ -7,19 +7,26 @@
   <link rel="stylesheet" href="../vis/dist/vis.css" media="screen" title="no title">
   <link rel="stylesheet" href="stylesheets/style.css" media="screen" title="no title">
   <script src="../vis/dist/vis.js" charset="utf-8"></script>
-  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
   <script src="index.js" charset="utf-8"></script>
-  <title>Document</title>
+  <title>Crime Data</title>
 </head>
 <body>
-  <div style="width:700px; font-size:14px; text-align: justify;">
+  <div class="description">Local Crime Data</div>
 
+  <div class="drop">
     Handle overlap: <select id="dropdownID">
     <option value="overlap">overlap</option>
     <option value="sideBySide" selected="selected">sideBySide</option>
     <option value="stack">stack</option>
     </select>
-</div>
+    </div>
+    <div>
+      <div class="type-of-crime" style="color:#add8e6"><strong>Blue:</strong> Burglaries</div>
+      <div class="type-of-crime" style="color:#ffb732"><strong>Orange:</strong> Larceny</div>
+      <div class="type-of-crime" style="color:#885ead"><strong>Purple:</strong> Vehicle Theft</div>
+    </div>
+
   <div id="visualization" class="court"></div>
 </body>
 </html>
